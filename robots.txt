@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yousufpanwala.com/sitemap.xml

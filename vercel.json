@@ -1,0 +1,64 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/#approach",
+      "permanent": false
+    },
+    {
+      "source": "/o-level-maths",
+      "destination": "/#courses",
+      "permanent": false
+    },
+    {
+      "source": "/igcse-maths",
+      "destination": "/#courses",
+      "permanent": false
+    },
+    {
+      "source": "/a-level-maths",
+      "destination": "/#courses",
+      "permanent": false
+    },
+    {
+      "source": "/contact",
+      "destination": "/#enrol",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
